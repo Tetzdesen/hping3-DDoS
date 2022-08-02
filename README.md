@@ -1,6 +1,6 @@
-# hping3-DDoS
+# Hping3-DDoS
 
-# Commands Importat
+# Important Commands
 
 ```
 • -V: Modo Verbose;
